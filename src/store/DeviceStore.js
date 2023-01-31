@@ -24,7 +24,15 @@ export default class DeviceStore {
             {id: 7, name:'Apple 4', price:120000, rating:3.9 }, 
             {id: 8, name:'Apple 5', price:200000, rating:3.4 }
         ];
+        this._selectedType = {};
+        this._selectedBrand = {};
         makeAutoObservable(this);
+    }
+    setSelectedType(type) {
+        this._selectedType = type;
+    }
+    setSelectedBrand(brand) {
+        this._selectedBrand = brand;
     }
     setTypes(types) {
         this._types = types;
@@ -44,5 +52,11 @@ export default class DeviceStore {
     get devices() {
         return this._devices;
     }
-
+    get selectedType() {
+        return this._selectedType;
+    }
+    get selectedBrand() {
+        return this._selectedBrand;
+    }
+ 
 }
