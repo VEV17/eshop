@@ -24,7 +24,7 @@ const Auth = () => {
                         placeholder="Введите пароль"
                     />
                 </Form>
-                <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
+                <Form className="d-flex justify-content-between mt-3 pl-3 pr-3">
                     {isLogin ?
                         <div>
                             Нет аккаунта? <NavLink to={REGISTRATION_ROUTE}>Зарегистрируйтесь!</NavLink>
@@ -37,7 +37,7 @@ const Auth = () => {
                     <Button variant={"outline-success"}>
                         {isLogin ? 'Войти' : 'Регистрация'}
                     </Button>
-                </Row>
+                </Form>
             </Card>
         </Container>
     );

@@ -15,5 +15,8 @@
 
                         <Route path='*' element={<Navigate to='/'/>} />
 
-
+            <Route key={SHOP_ROUTE} path={SHOP_ROUTE} element={<Shop />}/>
+            <Route key={LOGIN_ROUTE} path={LOGIN_ROUTE} element={<Auth />} />
+            <Route key={REGISTRATION_ROUTE} path={REGISTRATION_ROUTE} element={<Auth />} />
+            <Route path='*' element={<Navigate to='/'/>} />
 */} 
