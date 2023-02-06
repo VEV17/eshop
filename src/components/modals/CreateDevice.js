@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
-import { Button, Dropdown, Form, FormControl, Modal } from "react-bootstrap";
+import React, { useContext, useState } from "react";
+import { Button, Col, Dropdown, Form, FormControl, Modal, Row } from "react-bootstrap";
 import { Context } from "../..";
 
 const CreateDevice = ({show, onHide}) => {
     const {device} = useContext(Context);
     const [info, setInfo] = useState([]);
     const addInfo = () => {
-        setInfo(...info, {title:'', desc:'', num: Date.now()})
+        setInfo([...info, {title:'', desc:'', num: Date.now()}]);
+    }
+    const removeInfo = (num) => {
+        setInfo(info.filter(i => i.num !== num));
     }
 
     return (
@@ -59,6 +62,28 @@ const CreateDevice = ({show, onHide}) => {
                         onClick={addInfo}
                     > Добавить новое свойство
                     </Button>
+                    {   info.map(i => {
+                        <Row className="mt-4" key={i.num}>
+                            <Col md={4}>
+                                <Form.Control
+                                    placeholder="Введите название свойства"
+                                />
+                            </Col>
+                            <Col md={4}>
+                                <Form.Control
+                                    placeholder="Введите значение свойства"
+                                />
+                            </Col>
+                            <Col md={4}>
+                                <Button onClick={() => removeInfo(i.num)}
+                                    variant="outline-danger">
+                                    Удалить
+                                </Button>
+                            </Col>
+                        </Row>
+                    })
+
+                    }
                 </Form>
             </Modal.Body>
             <Modal.Footer>
