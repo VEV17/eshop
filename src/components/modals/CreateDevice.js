@@ -2,11 +2,11 @@ import React, { useContext, useState } from "react";
 import { Button, Col, Dropdown, Form, FormControl, Modal, Row } from "react-bootstrap";
 import { Context } from "../..";
 
-const CreateDevice = ({show, onHide}) => {
-    const {device} = useContext(Context);
+const CreateDevice = ({ show, onHide }) => {
+    const { device } = useContext(Context);
     const [info, setInfo] = useState([]);
     const addInfo = () => {
-        setInfo([...info, {title:'', desc:'', num: Date.now()}]);
+        setInfo([...info, { title: '', desc: '', num: Date.now() }]);
     }
     const removeInfo = (num) => {
         setInfo(info.filter(i => i.num !== num));
@@ -29,7 +29,7 @@ const CreateDevice = ({show, onHide}) => {
                     <Dropdown className="mt-2 mb-2">
                         <Dropdown.Toggle>Выберите тип</Dropdown.Toggle>
                         <Dropdown.Menu>
-                            {device.types.map(type => 
+                            {device.types.map(type =>
                                 <Dropdown.Item key={type.id}>{type.name}</Dropdown.Item>
                             )}
                         </Dropdown.Menu>
@@ -37,7 +37,7 @@ const CreateDevice = ({show, onHide}) => {
                     <Dropdown className="mt-2 mb-2">
                         <Dropdown.Toggle>Выберите брэнд</Dropdown.Toggle>
                         <Dropdown.Menu>
-                            {device.brands.map(brand => 
+                            {device.brands.map(brand =>
                                 <Dropdown.Item key={brand.id}>{brand.name}</Dropdown.Item>
                             )}
                         </Dropdown.Menu>
@@ -56,13 +56,13 @@ const CreateDevice = ({show, onHide}) => {
                         placeholder="Загрузите изображение"
                         type="file"
                     />
-                    <hr/>
+                    <hr />
                     <Button
                         variant="outline-dark"
                         onClick={addInfo}
                     > Добавить новое свойство
                     </Button>
-                    {   info.map(i => {
+                    {info.map(i =>
                         <Row className="mt-4" key={i.num}>
                             <Col md={4}>
                                 <Form.Control
@@ -81,9 +81,7 @@ const CreateDevice = ({show, onHide}) => {
                                 </Button>
                             </Col>
                         </Row>
-                    })
-
-                    }
+                    )}
                 </Form>
             </Modal.Body>
             <Modal.Footer>
