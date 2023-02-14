@@ -8,6 +8,7 @@ const CreateType = ({show, onHide}) => {
     const addType = () => {
         device.types.push({id: device.types.length+1, name:value});
         onHide();
+        setValue('');
     }
 
     return (
