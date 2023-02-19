@@ -4,7 +4,7 @@ import { Context } from "../..";
 
 const CreateBrand = ({show, onHide}) => {
     const {device} = useContext(Context);
-    const [value, setValue] = useState(''); 
+    const [value, setValue] = useState('');
     const addBrand = () => {
         device.brands.push({id: device.brands.length+1, name:value});
         onHide();
