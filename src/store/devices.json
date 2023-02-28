@@ -4,69 +4,79 @@
         "name": "Redmi Note 10Pro",
         "price": 20300,
         "rating": 4.8,
-        "img": ""
+        "img": "",
+        "brand" : "Xiaomi"
     },
     {
         "id": 2,
         "name": "Galaxy 5",
         "price": 21200,
         "rating": 4.8,
-        "img": ""
+        "img": "",
+        "brand" : "Samsung"
     },
     {
         "id": 3,
         "name": "SmartTV Telefunken 52400 4K4500",
         "price": 35200,
         "rating": 4.4,
-        "img": ""
+        "img": "",
+        "brand" : "Telefunken"
     },
     {
         "id": 4,
         "name": "TPLink 100/4g-Pro",
         "price": 2830,
         "rating": 4.9,
-        "img": ""
+        "img": "",
+        "brand" : "TPLink"
     },
     {
         "id": 5,
-        "name": "TPLiink 100/4ap",
+        "name": "TPLink 100/4ap",
         "price": 1900,
         "rating": 4.1,
-        "img": ""
+        "img": "",
+        "brand" : "TPLink"
     },
     {
         "id": 6,
         "name": "Galaxy 6 Pro",
         "price": 25000,
         "rating": 4.9,
-        "img": ""
+        "img": "",
+        "brand" : "Samsung"
     },
     {
         "id": 7,
-        "name": "Apple 4",
+        "name": "iPhone 4",
         "price": 120000,
         "rating": 3.9,
-        "img": ""
+        "img": "",
+        "brand" : "Apple"
     },
     {
         "id": 8,
-        "name": "Apple 5",
+        "name": "iPhone 5",
         "price": 200000,
         "rating": 3.4,
-        "img": ""
+        "img": "",
+        "brand" : "Apple"
     },
     {
         "id": 9,
-        "name": "Apple 6",
+        "name": "iPhone 6",
         "price": 220000,
         "rating": 3.2,
-        "img": ""
+        "img": "",
+        "brand" : "Apple"
     },
     {
         "id": 10,
-        "name": "Apple 7",
+        "name": "iPhone 7",
         "price": 240000,
         "rating": 3.1,
-        "img": ""
+        "img": "",
+        "brand" : "Apple"
     }
 ]

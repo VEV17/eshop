@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Card, Col, Container, Form, Image, Row } from "react-bootstrap";
+import { Context } from "..";
 import star2 from "../assets/star2.png";
 
 const DevicePage = () => {
+    const { device1 } = useContext(Context);
+    console.log(device1);
     const device = { id: 1, name: 'Redmi Note 10Pro', price: 20300, rating: 4.8, img: '' };
     const descrition = [
         {id:1, title:'Оперативная память', desc:'4Mb'},
