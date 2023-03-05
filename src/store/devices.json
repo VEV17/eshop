@@ -4,7 +4,7 @@
         "name": "Redmi Note 10Pro",
         "price": 20300,
         "rating": 4.8,
-        "img": "",
+        "img": "https://c.dns-shop.ru/thumb/st1/fit/320/250/8228a1bead815c1b88665061a0322205/224b94b6574d7245b4ab040f9edb0ff03ae26bfb393c7ec70742d1e8dedf5a47.jpg",
         "brand" : "Xiaomi"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Galaxy 5",
         "price": 21200,
         "rating": 4.8,
-        "img": "",
+        "img": "https://c.dns-shop.ru/thumb/st1/fit/320/250/bb627f7dca71f10866fbd3b07778c8c8/edeae00292ef43f22059c6e390ef63b49f5be8d0af8713632c7aa1595324b1af.jpg",
         "brand" : "Samsung"
     },
     {
@@ -20,7 +20,7 @@
         "name": "SmartTV Telefunken 52400 4K4500",
         "price": 35200,
         "rating": 4.4,
-        "img": "",
+        "img": "https://c.dns-shop.ru/thumb/st1/fit/320/250/2044f88ee53cc8289105948a3ebb5cbe/1bfc3d938e84f4649331594f04235ce8d2d73533e51e838cd2756e38d4d1854a.jpg",
         "brand" : "Telefunken"
     },
     {
@@ -28,7 +28,7 @@
         "name": "TPLink 100/4g-Pro",
         "price": 2830,
         "rating": 4.9,
-        "img": "",
+        "img": "https://c.dns-shop.ru/thumb/st4/fit/320/250/e678477621f23fddd6c88419faa0a809/b1ada677786d567fb16db03dc2cfcf0b19d506ee5fe3a409b67bda750de33478.jpg",
         "brand" : "TPLink"
     },
     {

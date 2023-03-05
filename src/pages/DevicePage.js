@@ -3,10 +3,11 @@ import { Button, Card, Col, Container, Form, Image, Row } from "react-bootstrap"
 import { Context } from "..";
 import star2 from "../assets/star2.png";
 
-const DevicePage = () => {
-    const { device1 } = useContext(Context);
-    console.log(device1);
-    const device = { id: 1, name: 'Redmi Note 10Pro', price: 20300, rating: 4.8, img: '' };
+const DevicePage = (id) => {
+    console.log(id);
+    const { device } = useContext(Context);
+    let _device = device.devices[3];
+    //const _device = { id: 1, name: 'Redmi Note 10Pro', price: 20300, rating: 4.8, img: '' };
     const descrition = [
         {id:1, title:'Оперативная память', desc:'4Mb'},
         {id:2, title:'Дисплей', desc:'6.5 IPS, 1920x1640, 60Hz'},
@@ -19,16 +20,16 @@ const DevicePage = () => {
         <Container className="mt-3">
             <Row>
                 <Col md={4}>
-                    <Image width={300} height={300} src={device.img} />
+                    <Image width={300} height={300} src={_device.img} />
                 </Col>
                 <Col md={4}>
                     <Form className="d-flex flex-column align-items-center">
-                        <h2>{device.name}</h2>
+                        <h2>{_device.name}</h2>
                         <div
                             className="d-flex align-items-center justify-content-center"
                             style={{ background: `url(${star2})`, width: 140, height: 140, backgroundSize: 'cover', fontSize: 54 }}
                         >
-                            {device.rating}
+                            {_device.rating}
                         </div>
                     </Form>
                 </Col>
@@ -37,7 +38,7 @@ const DevicePage = () => {
                     className="d-flex flex-column align-items-center justify-content-around"
                     style={{width:300, height:300, fontSize:32, border:'5px solid light-gray'}}
                     >   
-                        <h3>{device.price} руб.</h3>
+                        <h3>{_device.price} руб.</h3>
                         <Button variant={"outline-dark"}>В корзину</Button>
                         
                     </Card>

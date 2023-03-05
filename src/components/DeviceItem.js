@@ -4,7 +4,7 @@ import star1 from '../assets/star1.png';
 import {useNavigate} from 'react-router-dom';
 import { DEVICE_ROUTE } from "../utils/consts";
 
-const DevieItem = ({device}) => {
+const DeviceItem = ({device}) => {
     const navigate = useNavigate();
     return(
         <Col md={3} className={"mt-3"} onClick={() => navigate(DEVICE_ROUTE + '/' + device.id) }>
@@ -22,4 +22,4 @@ const DevieItem = ({device}) => {
         </Col>
     )
 }
-export default DevieItem;
+export default DeviceItem;

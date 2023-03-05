@@ -16,7 +16,7 @@ const AppRouter = () => {
             <Route key={LOGIN_ROUTE} path={LOGIN_ROUTE} element={<Auth />} />
             <Route key={ADMIN_ROUTE} path={ADMIN_ROUTE} element={<Admin />} />
             <Route key={REGISTRATION_ROUTE} path={REGISTRATION_ROUTE} element={<Auth />} />
-            <Route key={DEVICE_ROUTE + '/:id'} path={DEVICE_ROUTE + '/:id'} element={<DevicePage />}/>
+            <Route key={DEVICE_ROUTE + '/:id'} path={DEVICE_ROUTE + '/:id'} element={<DevicePage id='$id'/>}/>
             <Route path='*' element={<Navigate to='/'/>} />
         </Routes>
  
